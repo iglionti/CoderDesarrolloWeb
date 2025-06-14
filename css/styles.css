@@ -1,0 +1,33 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header minimalistic overrides */
+header {
+  box-shadow: none;
+}
+
+/* Dark mode link colors */
+.nav-link {
+  color: #f8f9fa !important; /* light */
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: #0677f8 !important;
+}
+
+/* Text adjustments */
+h2, h1, .navbar-brand {
+  color: #f8f9fa;
+}
+
+p.lead, footer p {
+  color: #dee2e6;
+}
+
+/* Footer background */
+.container .img-fluid,
+.container iframe {
+  filter: brightness(1.1);
+}
