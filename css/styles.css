@@ -1,13 +1,12 @@
 body {
   position: relative;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   min-height: 100vh;
   z-index: 0;
 }
-
 body::before {
-  content: '';
-  background: url('../img/Venecia.png') center/cover no-repeat;
+  content: "";
+  background: url("../img/Venecia.png") center/cover no-repeat;
   position: fixed;
   top: 0;
   left: 0;
@@ -16,14 +15,38 @@ body::before {
   opacity: 0.5;
   z-index: -1;
 }
+
+header {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+}
 header img.logo {
   max-height: 175px;
   height: auto;
   width: auto;
 }
-
 header nav .navbar-nav {
   gap: 1rem;
+}
+header .nav-link {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #2c3e50 !important;
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+header .nav-link:hover, header .nav-link.active {
+  color: #2c3e50 !important;
+  border-bottom-color: #6c757d;
+}
+header .nav-pills .nav-link {
+  border-radius: 0 !important;
 }
 
 .container .img-fluid,
@@ -31,14 +54,21 @@ header nav .navbar-nav {
   filter: brightness(1.1);
 }
 
+footer {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 1.5rem 1rem;
+  margin-top: auto;
+}
+
 .stylish-footer {
   margin-top: auto;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 14px;
   color: rgba(33, 37, 41, 0.7);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
-
 .stylish-footer p {
   margin: 0;
   line-height: 1.6;
@@ -51,7 +81,17 @@ header nav .navbar-nav {
   transition: color 0.3s ease;
   text-decoration: none;
 }
-
 .footer-icon-link:hover {
   color: #2c3e50;
 }
+
+h1, h2, .navbar-brand {
+  color: #f8f9fa;
+  font-family: "Open Sans", sans-serif;
+}
+
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+/*# sourceMappingURL=styles.css.map */
