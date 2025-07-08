@@ -1,33 +1,57 @@
 body {
-  font-family: 'Roboto', sans-serif;
+  position: relative;
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  z-index: 0;
 }
 
-/* Header minimalistic overrides */
-header {
-  box-shadow: none;
+body::before {
+  content: '';
+  background: url('../img/Venecia.png') center/cover no-repeat;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: -1;
+}
+header img.logo {
+  max-height: 175px;
+  height: auto;
+  width: auto;
 }
 
-/* Dark mode link colors */
-.nav-link {
-  color: #f8f9fa !important; /* light */
-  font-weight: 500;
+header nav .navbar-nav {
+  gap: 1rem;
 }
 
-.nav-link:hover {
-  color: #0677f8 !important;
-}
-
-/* Text adjustments */
-h2, h1, .navbar-brand {
-  color: #f8f9fa;
-}
-
-p.lead, footer p {
-  color: #dee2e6;
-}
-
-/* Footer background */
 .container .img-fluid,
 .container iframe {
   filter: brightness(1.1);
+}
+
+.stylish-footer {
+  margin-top: auto;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: rgba(33, 37, 41, 0.7);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.stylish-footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+.footer-icon-link {
+  color: rgba(33, 37, 41, 0.6);
+  font-size: 1.3rem;
+  margin: 0 0.6rem;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.footer-icon-link:hover {
+  color: #2c3e50;
 }
