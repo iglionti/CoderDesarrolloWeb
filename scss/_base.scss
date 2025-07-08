@@ -1,0 +1,56 @@
+body {
+  position: relative;
+  font-family: $font-main;
+  min-height: 100vh;
+  z-index: 0;
+
+  &.home-page {
+    background-color: transparent;
+
+    &::before {
+      content: '';
+      background: url('../img/Venecia.png') center/cover no-repeat;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      opacity: 0.5;
+      z-index: -1;
+    }
+  }
+}
+h1, h2, .navbar-brand {
+  @extend %text-light-base;
+}
+
+.container {
+  .img-fluid,
+  iframe {
+    filter: brightness($img-brightness);
+  }
+}
+
+.section-padding {
+  padding: $double-spacing $base-spacing;
+}
+
+.quote-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  animation: fadeInUp 1s ease-out;
+
+  .quote-text {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    font-style: italic;
+    color: rgba(33, 37, 41, 0.85); 
+    margin-bottom: 1rem;
+  }
+
+  .quote-author {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    color: rgba(33, 37, 41, 0.6);
+  }
+}

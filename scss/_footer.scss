@@ -1,0 +1,31 @@
+footer {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  padding: 1.5rem 1rem;
+  margin-top: auto;
+}
+
+.stylish-footer {
+  margin-top: auto;
+  font-family: $font-main;
+  font-size: $footer-font-size;
+  color: $text-color-base;
+  border-top: 1px solid $footer-border;
+
+  p {
+    margin: 0;
+    line-height: 1.6;
+  }
+}
+
+.footer-icon-link {
+  @include icon-style($icon-color, $icon-size);
+  margin: 0 0.6rem;
+  @include transition(color);
+  text-decoration: none;
+ 
+  &:hover {
+    color: $text-color-hover;
+  }
+}
