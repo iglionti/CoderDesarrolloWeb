@@ -1,0 +1,30 @@
+header {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+
+  img.logo {
+    max-height: $logo-max-height;
+    height: auto;
+    width: auto;
+  }
+
+  nav .navbar-nav {
+    gap: 1rem;
+  }
+
+ .nav-link {
+    @extend %link-style;
+    font-size: $nav-font-size;
+    font-weight: $nav-font-weight;
+    text-transform: uppercase;
+    letter-spacing: $nav-letter-spacing;
+    &:hover,
+    &.active {
+        border-bottom-color: $link-hover-border-color;
+    }
+  }
+  .nav-pills .nav-link {
+    border-radius: 0 !important;
+  }
+}

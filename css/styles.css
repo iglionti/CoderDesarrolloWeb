@@ -1,10 +1,35 @@
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.rounded-shadow {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
+h1, h2, .navbar-brand {
+  color: #f8f9fa;
+  font-family: "Open Sans", sans-serif;
+}
+
+header .nav-link {
+  color: #2c3e50 !important;
+  background-color: transparent !important;
+  border: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom-color 0.3s ease;
+}
+
 body {
   position: relative;
   font-family: "Open Sans", sans-serif;
   min-height: 100vh;
   z-index: 0;
 }
-body::before {
+body.home-page {
+  background-color: transparent;
+}
+body.home-page::before {
   content: "";
   background: url("../img/Venecia.png") center/cover no-repeat;
   position: fixed;
@@ -14,6 +39,33 @@ body::before {
   height: 100%;
   opacity: 0.5;
   z-index: -1;
+}
+
+.container .img-fluid,
+.container iframe {
+  filter: brightness(1.1);
+}
+
+.section-padding {
+  padding: 2rem 1rem;
+}
+
+.quote-section {
+  text-align: center;
+  padding: 4rem 1rem;
+  animation: fadeInUp 1s ease-out;
+}
+.quote-section .quote-text {
+  font-family: "Playfair Display", serif;
+  font-size: 2rem;
+  font-style: italic;
+  color: rgba(33, 37, 41, 0.85);
+  margin-bottom: 1rem;
+}
+.quote-section .quote-author {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  color: rgba(33, 37, 41, 0.6);
 }
 
 header {
@@ -30,28 +82,16 @@ header nav .navbar-nav {
   gap: 1rem;
 }
 header .nav-link {
-  font-family: "Open Sans", sans-serif;
   font-size: 16px;
   font-weight: 300;
   text-transform: uppercase;
   letter-spacing: 2px;
-  color: #2c3e50 !important;
-  background-color: transparent !important;
-  border: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom-color 0.3s ease;
 }
 header .nav-link:hover, header .nav-link.active {
-  color: #2c3e50 !important;
   border-bottom-color: #6c757d;
 }
 header .nav-pills .nav-link {
   border-radius: 0 !important;
-}
-
-.container .img-fluid,
-.container iframe {
-  filter: brightness(1.1);
 }
 
 footer {
@@ -85,13 +125,18 @@ footer {
   color: #2c3e50;
 }
 
-h1, h2, .navbar-brand {
-  color: #f8f9fa;
-  font-family: "Open Sans", sans-serif;
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-.text-shadow {
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+.fade-in-up {
+  animation: fade-in-up 1s ease-out;
 }
 
 /*# sourceMappingURL=styles.css.map */
