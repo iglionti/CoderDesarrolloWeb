@@ -1,0 +1,31 @@
+# Node modules (in case you use SCSS compilation via Node tools)
+node_modules/
+
+# Compiled CSS (optional – ignore if compiled elsewhere or temporary)
+css/*.css
+css/*.css.map
+
+# SCSS cache
+.sass-cache/
+
+# VSCode settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files (if you use any for config)
+.env
+.env.*
+
+# Dist folders (optional, if you build)
+dist/
+build/
+
+# Other OS-specific junk files
+Thumbs.db
