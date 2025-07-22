@@ -32,7 +32,7 @@ body.home-page {
 body.home-page::before {
   content: "";
   background:
-    url("/CoderDesarrolloWeb/img/webp/venecia.webp"),
+    url("/Lionti-EntregaFinal/img/webp/venecia.webp"),
     url("/img/webp/venecia.webp");
   background-position: center;
   background-size: cover;
