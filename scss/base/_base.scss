@@ -9,7 +9,12 @@ body {
 
     &::before {
       content: '';
-      background: url('/img/webp/venecia.webp') center/cover no-repeat;
+      background:
+        url("/CoderDesarrolloWeb/img/webp/venecia.webp"),
+        url("../img/webp/venecia.webp");
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
       position: fixed;
       top: 0;
       left: 0;
