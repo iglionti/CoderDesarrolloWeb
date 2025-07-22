@@ -29,3 +29,6 @@ build/
 
 # Other OS-specific junk files
 Thumbs.db
+
+# Local readme Files
+*.md

@@ -31,7 +31,7 @@ body.home-page {
 }
 body.home-page::before {
   content: "";
-  background: url("/img/venecia.png") center/cover no-repeat;
+  background: url("/img/webp/venecia.webp") center/cover no-repeat;
   position: fixed;
   top: 0;
   left: 0;
@@ -39,6 +39,27 @@ body.home-page::before {
   height: 100%;
   opacity: 0.5;
   z-index: -1;
+}
+
+/* WebP optimized destination cards */
+.place-card-europa {
+  background-image: url("../img/webp/europe.webp");
+}
+
+.place-card-asia {
+  background-image: url("../img/webp/asia.webp");
+}
+
+.place-card-northamerica {
+  background-image: url("../img/webp/northamerica.webp");
+}
+
+.place-card-latinamerica {
+  background-image: url("../img/webp/latinamerica.webp");
+}
+
+.place-card-africa {
+  background-image: url("../img/webp/africa.webp");
 }
 
 .container .img-fluid,

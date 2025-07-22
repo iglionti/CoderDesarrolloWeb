@@ -2,20 +2,95 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>True North | Nosotros</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Nosotros - True North | Historia y Misión de Nuestra Agencia de Viajes</title>
+    <meta name="description" content="Conoce la historia de True North, fundada en 2020. Somos líderes en turismo polar y viajes de lujo, creando experiencias exclusivas con pasión por la aventura y elegancia." />
+    <meta name="keywords" content="historia True North, agencia viajes lujo, turismo polar, equipo profesional, misión empresa, viajes exclusivos" />
+    <meta name="author" content="True North Travel Agency" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://truenorth-travel.com/pages/about.html" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Nosotros - True North | Historia y Misión de Nuestra Agencia" />
+    <meta property="og:description" content="Conoce la historia de True North, fundada en 2020. Líderes en turismo polar y viajes de lujo, creando experiencias exclusivas con pasión por la aventura." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://truenorth-travel.com/pages/about.html" />
+    <meta property="og:image" content="https://truenorth-travel.com/img/team1.png" />
+    <meta property="og:image:alt" content="Equipo profesional de True North Travel Agency" />
+    <meta property="og:site_name" content="True North Travel Agency" />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nosotros - True North | Historia y Misión" />
+    <meta name="twitter:description" content="Conoce la historia de True North, fundada en 2020. Líderes en turismo polar y viajes de lujo." />
+    <meta name="twitter:image" content="https://truenorth-travel.com/img/team1.png" />
+    <meta name="twitter:image:alt" content="Equipo profesional de True North" />
+    
+    <!-- Favicon and Touch Icons -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-filled/50/travel-agency.png" />
+    <link rel="apple-touch-icon" sizes="100x100" href="https://img.icons8.com/ios-filled/100/travel-agency.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://img.icons8.com/ios-filled/32/travel-agency.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://img.icons8.com/ios-filled/16/travel-agency.png" />
+    
+    <!-- External Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "mainEntity": {
+        "@type": "TravelAgency",
+        "name": "True North",
+        "description": "Agencia de viajes especializada en experiencias exclusivas y turismo polar de lujo",
+        "foundingDate": "2020",
+        "url": "https://truenorth-travel.com",
+        "logo": "https://truenorth-travel.com/img/logo.png",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1 Aurora Way",
+          "addressLocality": "North Pole",
+          "addressRegion": "AK",
+          "postalCode": "99705",
+          "addressCountry": "US"
+        },
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+54-911-2522-4004",
+          "contactType": "customer service",
+          "availableLanguage": ["Spanish", "English"]
+        },
+        "employee": [
+          {
+            "@type": "Person",
+            "name": "Equipo True North",
+            "jobTitle": "Especialistas en Viajes de Lujo"
+          }
+        ]
+      }
+    }
+    </script>
   </head>
 
   <body class="d-flex flex-column">
-    <header class="d-flex flex-column align-items-center justify-content-center mt-4">
-      <img src="../img/logo.png" alt="Logo True North" class="logo" />
-      <nav class="navbar navbar-expand-md navbar-light justify-content-center w-100">
+    <header class="d-flex flex-column align-items-center justify-content-center mt-4" role="banner">
+      <picture>
+        <source srcset="../img/webp/logo.webp" type="image/webp">
+        <img src="../img/png/logo.png" alt="True North - Agencia de Viajes de Lujo especializada en experiencias polares exclusivas" class="logo" width="175" height="auto" />
+      </picture>
+      <nav class="navbar navbar-expand-md navbar-light justify-content-center w-100" role="navigation" aria-label="Navegación principal">
         <div class="container justify-content-center flex-column">
-          <button class="navbar-toggler align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Alternar navegación">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
@@ -27,7 +102,7 @@
                 <a class="nav-link px-3" href="places.html">Lugares</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active px-3" href="about.html">Nosotros</a>
+                <a class="nav-link active px-3" href="about.html" aria-current="page">Nosotros</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link px-3" href="tours.html">Tours</a>
@@ -40,45 +115,78 @@
         </div>
       </nav>
     </header>
-    <main class="container my-5 flex-grow-1">
-      <section class="mb-5 text-center">
-        <h2 class="h4 mb-3 text-shadow">Nuestra misión</h2>
+    
+    <main class="container my-5 flex-grow-1" role="main">
+      <h1 class="visually-hidden">Nosotros - True North Travel Agency</h1>
+      
+      <section class="mb-5 text-center" aria-labelledby="mission-heading">
+        <h2 id="mission-heading" class="h4 mb-3 text-shadow">Nuestra Misión</h2>
         <p class="mb-4 w-75 mx-auto">
           En True North, creamos experiencias exclusivas y memorables en los rincones más extraordinarios y remotos del planeta. Nuestro compromiso es proporcionar viajes incomparables, fusionando lujo, autenticidad y respeto por la naturaleza, para clientes exigentes que buscan descubrir el mundo desde perspectivas únicas.
         </p>
-        <div id="teamCarousel" class="carousel slide mx-auto rounded shadow-sm" data-bs-ride="carousel" data-bs-interval="2750" style="max-width: 800px;">
+        <div id="teamCarousel" class="carousel slide mx-auto rounded shadow-sm" data-bs-ride="carousel" data-bs-interval="2750" style="max-width: 800px;" aria-label="Galería del equipo True North">
           <div class="carousel-inner rounded">
             <div class="carousel-item active">
-              <img src="../img/team1.png" class="d-block w-100" alt="Equipo True North 1">
+              <picture>
+                <source srcset="../img/webp/team1.webp" type="image/webp">
+                <img src="../img/png/team1.png" class="d-block w-100" alt="Equipo profesional de True North especializados en viajes de lujo y turismo polar" width="800" height="auto" />
+              </picture>
             </div>
             <div class="carousel-item">
-              <img src="../img/team2.png" class="d-block w-100" alt="Equipo True North 2">
+              <picture>
+                <source srcset="../img/webp/team2.webp" type="image/webp">
+                <img src="../img/png/team2.png" class="d-block w-100" alt="Especialistas en experiencias exclusivas de viaje trabajando en planificación de destinos únicos" width="800" height="auto" />
+              </picture>
             </div>
             <div class="carousel-item">
-              <img src="../img/team3.png" class="d-block w-100" alt="Equipo True North 3">
+              <picture>
+                <source srcset="../img/webp/team3.webp" type="image/webp">
+                <img src="../img/png/team3.png" class="d-block w-100" alt="Consultores expertos en turismo polar y aventuras de lujo en destinos remotos" width="800" height="auto" />
+              </picture>
             </div>
           </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev" aria-label="Imagen anterior del equipo">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next" aria-label="Siguiente imagen del equipo">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+          </button>
         </div>
       </section>
-      <section class="text-center">
-        <h2 class="h4 mb-3 text-shadow">Historia</h2>
+      
+      <section class="text-center" aria-labelledby="history-heading">
+        <h2 id="history-heading" class="h4 mb-3 text-shadow">Historia</h2>
         <p class="w-75 mx-auto">
           Desde su fundación en 2020, True North ha evolucionado rápidamente, estableciéndose como líder en turismo polar y viajes de lujo. Inspirados por la pasión por la aventura y la elegancia, hemos perfeccionado nuestra oferta para proporcionar experiencias excepcionales, diseñadas cuidadosamente hasta en el mínimo detalle. Cada viaje con nosotros es una oportunidad para conectar profundamente con la naturaleza y descubrir la belleza escondida de los lugares más sorprendentes del planeta.
         </p>
       </section>
     </main>
-    <footer class="container text-center stylish-footer">
+    
+    <footer class="container text-center stylish-footer" role="contentinfo">
       <div class="py-4">
-        <div class="mb-3">
-          <a href="https://www.instagram.com/" target="_blank" class="footer-icon-link"><i class="bi bi-instagram"></i></a>
-          <a href="https://facebook.com/" target="_blank" class="footer-icon-link"><i class="bi bi-facebook"></i></a>
-          <a href="https://x.com/" target="_blank" class="footer-icon-link"><i class="bi bi-twitter"></i></a>
-          <a href="https://api.whatsapp.com/send/?phone=5491125224004&text=prueba" target="_blank" class="footer-icon-link"><i class="bi bi-whatsapp"></i></a>
-        </div>
-        <p class="footer-address mb-1">1 Aurora Way, North Pole, AK 99705, USA</p>
+        <nav aria-label="Redes sociales">
+          <div class="mb-3">
+            <a href="https://www.instagram.com/truenorth" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Síguenos en Instagram">
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://facebook.com/truenorth" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Síguenos en Facebook">
+              <i class="bi bi-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/truenorth" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Síguenos en X (Twitter)">
+              <i class="bi bi-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5491125224004&text=Hola%2C%20me%20interesa%20conocer%20su%20historia%20y%20servicios" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Contáctanos por WhatsApp">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+        <address class="footer-address mb-1">1 Aurora Way, North Pole, AK 99705, USA</address>
         <p class="footer-copy mb-0">&copy; 2025 True North. Todos los derechos reservados.</p>
       </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
