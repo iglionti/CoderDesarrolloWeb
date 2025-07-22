@@ -41,27 +41,6 @@ body.home-page::before {
   z-index: -1;
 }
 
-/* WebP optimized destination cards */
-.place-card-europa {
-  background-image: url("../img/webp/europe.webp");
-}
-
-.place-card-asia {
-  background-image: url("../img/webp/asia.webp");
-}
-
-.place-card-northamerica {
-  background-image: url("../img/webp/northamerica.webp");
-}
-
-.place-card-latinamerica {
-  background-image: url("../img/webp/latinamerica.webp");
-}
-
-.place-card-africa {
-  background-image: url("../img/webp/africa.webp");
-}
-
 .container .img-fluid,
 .container iframe {
   filter: brightness(1.1);
@@ -89,6 +68,15 @@ body.home-page::before {
   color: rgba(33, 37, 41, 0.6);
 }
 
+.text-shadow {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.rounded-shadow {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+}
+
 header {
   background: transparent;
   box-shadow: none;
@@ -113,6 +101,73 @@ header .nav-link:hover, header .nav-link.active {
 }
 header .nav-pills .nav-link {
   border-radius: 0 !important;
+}
+
+.language-selector {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1050;
+}
+.language-selector .btn {
+  background: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
+  color: #2c3e50;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.language-selector .btn:hover, .language-selector .btn:focus {
+  background: rgb(255, 255, 255);
+  border-color: #2c3e50;
+  color: #2c3e50;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+.language-selector .dropdown-menu {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.95);
+  min-width: 150px;
+  padding: 8px 0;
+}
+.language-selector .dropdown-item {
+  padding: 8px 16px;
+  font-size: 0.9rem;
+  color: #2c3e50;
+  transition: all 0.2s ease;
+  border-radius: 0;
+}
+.language-selector .dropdown-item:hover {
+  background: rgba(44, 62, 80, 0.1);
+  color: #2c3e50;
+}
+.language-selector .dropdown-item.active {
+  background: rgba(44, 62, 80, 0.15);
+  color: #2c3e50;
+  font-weight: 500;
+}
+.language-selector .flag-icon {
+  font-size: 1.1em;
+  line-height: 1;
+}
+@media (max-width: 768px) {
+  .language-selector {
+    top: 15px;
+    right: 15px;
+  }
+  .language-selector .btn {
+    padding: 6px 10px;
+    font-size: 0.85rem;
+  }
+  .language-selector .dropdown-menu {
+    min-width: 130px;
+  }
 }
 
 footer {
@@ -214,6 +269,54 @@ footer {
 .place-card:hover .overlay .title,
 .place-card:hover .overlay .date {
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.place-card-europa {
+  background-image: url("../img/webp/europe.webp");
+}
+
+.place-card-asia {
+  background-image: url("../img/webp/asia.webp");
+}
+
+.place-card-northamerica {
+  background-image: url("../img/webp/northamerica.webp");
+}
+
+.place-card-latinamerica {
+  background-image: url("../img/webp/latinamerica.webp");
+}
+
+.place-card-africa {
+  background-image: url("../img/webp/africa.webp");
+}
+
+.destination-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.destination-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+.destination-card .card-img-top {
+  transition: transform 0.3s ease;
+}
+.destination-card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.tour-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.tour-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+.tour-card .card-img-top {
+  transition: transform 0.3s ease;
+}
+.tour-card:hover .card-img-top {
+  transform: scale(1.02);
 }
 
 .contact-page h2 {

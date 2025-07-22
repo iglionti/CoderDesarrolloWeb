@@ -84,3 +84,39 @@
 .place-card-africa {
   background-image: url('../img/webp/africa.webp');
 }
+
+// Destination cards for new pages
+.destination-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover .card-img-top {
+    transform: scale(1.05);
+  }
+}
+
+// Tour cards for tours pages
+.tour-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-img-top {
+    transition: transform 0.3s ease;
+  }
+  
+  &:hover .card-img-top {
+    transform: scale(1.02);
+  }
+}
