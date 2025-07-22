@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://truenorth-travel.com/sitemap.xml
+
+# Block access to admin areas (if any in future)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow crawling of CSS and JS files
+Allow: /css/
+Allow: /js/
+Allow: /img/

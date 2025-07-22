@@ -2,20 +2,115 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>True North | Lugares</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <!-- SEO Meta Tags -->
+    <title>Destinos de Viaje - True North | Europa, Asia, América y África</title>
+    <meta name="description" content="Descubre destinos únicos con True North: Europa, Asia, Norteamérica, Latinoamérica y África. Experiencias de viaje exclusivas en los lugares más extraordinarios del mundo." />
+    <meta name="keywords" content="destinos viaje, Europa lujo, Asia exclusivo, América polar, África aventura, lugares únicos, turismo mundial" />
+    <meta name="author" content="True North Travel Agency" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://truenorth-travel.com/pages/places.html" />
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Destinos de Viaje - True North | Europa, Asia, América y África" />
+    <meta property="og:description" content="Descubre destinos únicos con True North: Europa, Asia, Norteamérica, Latinoamérica y África. Experiencias exclusivas en lugares extraordinarios." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://truenorth-travel.com/pages/places.html" />
+    <meta property="og:image" content="https://truenorth-travel.com/img/europe.png" />
+    <meta property="og:image:alt" content="Destinos de viaje exclusivos en Europa con True North" />
+    <meta property="og:site_name" content="True North Travel Agency" />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Destinos de Viaje - True North" />
+    <meta name="twitter:description" content="Descubre destinos únicos: Europa, Asia, América y África. Experiencias exclusivas en lugares extraordinarios." />
+    <meta name="twitter:image" content="https://truenorth-travel.com/img/europe.png" />
+    <meta name="twitter:image:alt" content="Destinos de viaje exclusivos" />
+    
+    <!-- Favicon and Touch Icons -->
+    <link rel="icon" type="image/x-icon" href="https://img.icons8.com/ios-filled/50/travel-agency.png" />
+    <link rel="apple-touch-icon" sizes="100x100" href="https://img.icons8.com/ios-filled/100/travel-agency.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="https://img.icons8.com/ios-filled/32/travel-agency.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="https://img.icons8.com/ios-filled/16/travel-agency.png" />
+    
+    <!-- External Stylesheets -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/styles.css" />
+    
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Destinos de Viaje - True North",
+      "description": "Colección de destinos exclusivos ofrecidos por True North Travel Agency",
+      "url": "https://truenorth-travel.com/pages/places.html",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Destinos de Viaje",
+        "itemListElement": [
+          {
+            "@type": "TouristDestination",
+            "position": 1,
+            "name": "Europa",
+            "description": "Experiencias exclusivas en destinos europeos únicos",
+            "image": "https://truenorth-travel.com/img/europe.png",
+            "url": "https://api.whatsapp.com/send/?phone=5491163351668&text=EUROPA"
+          },
+          {
+            "@type": "TouristDestination",
+            "position": 2,
+            "name": "Asia",
+            "description": "Aventuras de lujo en los destinos más fascinantes de Asia",
+            "image": "https://truenorth-travel.com/img/asia.png",
+            "url": "https://api.whatsapp.com/send/?phone=5491163351668&text=ASIA"
+          },
+          {
+            "@type": "TouristDestination",
+            "position": 3,
+            "name": "Norteamérica",
+            "description": "Experiencias polares y de aventura en Norteamérica",
+            "image": "https://truenorth-travel.com/img/northamerica.png",
+            "url": "https://api.whatsapp.com/send/?phone=5491163351668&text=NORTEAMERICA"
+          },
+          {
+            "@type": "TouristDestination",
+            "position": 4,
+            "name": "Latinoamérica",
+            "description": "Descubre la diversidad y belleza de Latinoamérica",
+            "image": "https://truenorth-travel.com/img/latinamerica.png",
+            "url": "https://api.whatsapp.com/send/?phone=5491163351668&text=LATINOAMERICA"
+          },
+          {
+            "@type": "TouristDestination",
+            "position": 5,
+            "name": "África",
+            "description": "Safaris de lujo y aventuras únicas en África",
+            "image": "https://truenorth-travel.com/img/africa.png",
+            "url": "https://api.whatsapp.com/send/?phone=5491163351668&text=AFRICA"
+          }
+        ]
+      }
+    }
+    </script>
   </head>
 
   <body class="d-flex flex-column">
-    <header class="d-flex flex-column align-items-center justify-content-center mt-4">
-      <img src="../img/logo.png" alt="Logo True North" class="logo" />
-      <nav class="navbar navbar-expand-md navbar-light justify-content-center w-100">
+    <header class="d-flex flex-column align-items-center justify-content-center mt-4" role="banner">
+      <picture>
+        <source srcset="../img/webp/logo.webp" type="image/webp">
+        <img src="../img/png/logo.png" alt="True North - Agencia de Viajes de Lujo especializada en experiencias polares exclusivas" class="logo" width="175" height="auto" />
+      </picture>
+      <nav class="navbar navbar-expand-md navbar-light justify-content-center w-100" role="navigation" aria-label="Navegación principal">
         <div class="container justify-content-center flex-column">
-          <button class="navbar-toggler align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler align-self-center mb-2" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Alternar navegación">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-center" id="mainNavbar">
@@ -24,7 +119,7 @@
                 <a class="nav-link px-3" href="../index.html">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active px-3" href="places.html">Lugares</a>
+                <a class="nav-link active px-3" href="places.html" aria-current="page">Lugares</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link px-3" href="about.html">Nosotros</a>
@@ -40,57 +135,83 @@
         </div>
       </nav>
     </header>
-    <main class="container my-5">
-      <section class="row g-4 justify-content-center">
-          <div class="col-md-4">
-            <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=EUROPA" target="_blank" class="place-card" style="background-image: url('../img/europe.png');">
-              <div class="overlay">
-                <h3 class="title">EUROPA</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=ASIA" target="_blank" class="place-card" style="background-image: url('../img/asia.png');">
-              <div class="overlay">
-                <h3 class="title">ASIA</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=NORTEAMERICA" target="_blank" class="place-card" style="background-image: url('../img/northamerica.png');">
-              <div class="overlay">
-                <h3 class="title">NORTEAMERICA</h3>
-              </div>
-            </a>
-          </div>
-          <div class="col-md-4">
-            <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=LATINOAMERICA" target="_blank" class="place-card" style="background-image: url('../img/latinamerica.png');">
-              <div class="overlay">
-                <h3 class="title">LATINOAMERICA</h3>
-              </div>
-            </a>
-          </div>      
-          <div class="col-md-4">
-            <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=AFRICA" target="_blank" class="place-card" style="background-image: url('../img/africa.png');">
-              <div class="overlay">
-                <h3 class="title">AFRICA</h3>
-              </div>
-            </a>
-          </div>              
-        </section>
+    
+    <main class="container my-5" role="main">
+      <h1 class="visually-hidden">Destinos de Viaje Exclusivos - True North</h1>
+      
+      <section class="row g-4 justify-content-center" aria-labelledby="destinations-heading">
+        <h2 id="destinations-heading" class="visually-hidden">Nuestros Destinos Principales</h2>
+        
+        <article class="col-md-4">
+          <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=EUROPA%20-%20Me%20interesa%20conocer%20sus%20experiencias%20exclusivas%20en%20Europa" target="_blank" rel="noopener" class="place-card place-card-europa" aria-describedby="europa-desc">
+            <div class="overlay">
+              <h3 class="title">EUROPA</h3>
+              <p id="europa-desc" class="visually-hidden">Experiencias exclusivas en destinos europeos únicos, desde castillos medievales hasta paisajes alpinos</p>
+            </div>
+          </a>
+        </article>
+        
+        <article class="col-md-4">
+          <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=ASIA%20-%20Me%20interesa%20conocer%20sus%20aventuras%20de%20lujo%20en%20Asia" target="_blank" rel="noopener" class="place-card place-card-asia" aria-describedby="asia-desc">
+            <div class="overlay">
+              <h3 class="title">ASIA</h3>
+              <p id="asia-desc" class="visually-hidden">Aventuras de lujo en los destinos más fascinantes de Asia, desde templos antiguos hasta metrópolis modernas</p>
+            </div>
+          </a>
+        </article>
+        
+        <article class="col-md-4">
+          <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=NORTEAMERICA%20-%20Me%20interesa%20conocer%20sus%20experiencias%20polares%20en%20Norteam%C3%A9rica" target="_blank" rel="noopener" class="place-card place-card-northamerica" aria-describedby="norteamerica-desc">
+            <div class="overlay">
+              <h3 class="title">NORTEAMÉRICA</h3>
+              <p id="norteamerica-desc" class="visually-hidden">Experiencias polares y de aventura en Norteamérica, incluyendo Alaska y regiones árticas</p>
+            </div>
+          </a>
+        </article>
+        
+        <article class="col-md-4">
+          <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=LATINOAMERICA%20-%20Me%20interesa%20descubrir%20la%20diversidad%20de%20Latinoam%C3%A9rica" target="_blank" rel="noopener" class="place-card place-card-latinamerica" aria-describedby="latinoamerica-desc">
+            <div class="overlay">
+              <h3 class="title">LATINOAMÉRICA</h3>
+              <p id="latinoamerica-desc" class="visually-hidden">Descubre la diversidad y belleza de Latinoamérica, desde la Patagonia hasta el Amazonas</p>
+            </div>
+          </a>
+        </article>
+        
+        <article class="col-md-4">
+          <a href="https://api.whatsapp.com/send/?phone=5491163351668&text=AFRICA%20-%20Me%20interesan%20sus%20safaris%20de%20lujo%20y%20aventuras%20en%20%C3%81frica" target="_blank" rel="noopener" class="place-card place-card-africa" aria-describedby="africa-desc">
+            <div class="overlay">
+              <h3 class="title">ÁFRICA</h3>
+              <p id="africa-desc" class="visually-hidden">Safaris de lujo y aventuras únicas en África, desde el Serengeti hasta las Cataratas Victoria</p>
+            </div>
+          </a>
+        </article>
+      </section>
     </main>
-    <footer class="container text-center stylish-footer">
+    
+    <footer class="container text-center stylish-footer" role="contentinfo">
       <div class="py-4">
-        <div class="mb-3">
-          <a href="https://www.instagram.com/" target="_blank" class="footer-icon-link"><i class="bi bi-instagram"></i></a>
-          <a href="https://facebook.com/" target="_blank" class="footer-icon-link"><i class="bi bi-facebook"></i></a>
-          <a href="https://x.com/" target="_blank" class="footer-icon-link"><i class="bi bi-twitter"></i></a>
-          <a href="https://api.whatsapp.com/send/?phone=5491125224004&text=prueba" target="_blank" class="footer-icon-link"><i class="bi bi-whatsapp"></i></a>
-        </div>
-        <p class="footer-address mb-1">1 Aurora Way, North Pole, AK 99705, USA</p>
+        <nav aria-label="Redes sociales">
+          <div class="mb-3">
+            <a href="https://www.instagram.com/truenorth" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Síguenos en Instagram">
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="https://facebook.com/truenorth" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Síguenos en Facebook">
+              <i class="bi bi-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/truenorth" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Síguenos en X (Twitter)">
+              <i class="bi bi-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://api.whatsapp.com/send/?phone=5491125224004&text=Hola%2C%20me%20interesan%20sus%20destinos%20de%20viaje" target="_blank" rel="noopener" class="footer-icon-link" aria-label="Contáctanos por WhatsApp">
+              <i class="bi bi-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
+        </nav>
+        <address class="footer-address mb-1">1 Aurora Way, North Pole, AK 99705, USA</address>
         <p class="footer-copy mb-0">&copy; 2025 True North. Todos los derechos reservados.</p>
       </div>
     </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
