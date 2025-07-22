@@ -1,0 +1,31 @@
+# Node modules 
+node_modules/
+
+# Compiled CSS 
+css/*.css
+css/*.css.map
+
+# SCSS cache
+.sass-cache/
+
+# VSCode settings
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Env files 
+.env
+.env.*
+
+# Dist folders 
+dist/
+build/
+
+# Other OS-specific junk files
+Thumbs.db
